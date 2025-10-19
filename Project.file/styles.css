@@ -1,0 +1,64 @@
+:root {
+  --bg: #f0f3fa;
+  --text: #1e202a;
+  --card-bg: #ffffff;
+  --accent: #6366f1;
+}
+
+body.dark {
+  --bg: #1e202a;
+  --text: #ffffff;
+  --card-bg: #252b43;
+  --accent: #38bdf8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 2rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.card:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.growth {
+  color: green;
+}
+
+.loss {
+  color: red;
+}
